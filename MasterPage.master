@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs"
+Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<title></title>
+<asp:ContentPlaceHolder id="head" runat="server">
+</asp:ContentPlaceHolder>
+<link href="menu.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<form id="form1" runat="server">
+<div>
+<div id="header" align="center">
+<h1>
+Lets Shop.com
+</h1>
+<asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo.PNG" 
+        Height="71px" />
+</div>
+
+<div id="menubar">
+<asp:Menu ID="Menu1" runat="server"
+Orientation="Horizontal" CssClass="menu">
+<Items>
+<asp:MenuItem Text="Home" NavigateUrl="Default.aspx"></asp:MenuItem>
+
+<asp:MenuItem Text="Contact Us" NavigateUrl="#"></asp:MenuItem>
+<asp:MenuItem Text="About Us" NavigateUrl="#"> </asp:MenuItem>
+<%--<asp:MenuItem Text="Signup" NavigateUrl="Registration.aspx"> </asp:MenuItem>
+<asp:MenuItem Text="Login in" NavigateUrl="Login.aspx"> </asp:MenuItem>--%>
+<asp:MenuItem Text="Go to Cart" NavigateUrl="AddtoCart.aspx">
+</asp:MenuItem>
+</Items>
+</asp:Menu>
+</div>
+<div id="footer" align="center" class="footer">
+<%--@Copy Right--%>
+</div>
+<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+</div>
+</form>
+</body>
+</html>

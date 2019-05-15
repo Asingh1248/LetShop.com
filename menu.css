@@ -1,0 +1,12 @@
+﻿body { 
+background-color: #ffff99; 
+ 
+ 
+} 
+ 
+ .header  {      }   
+ .menu  {  margin-top:30px;  margin-left:800px;    }  
+ .menu ul {  border-bottom: 1px solid #80ff80;  }
+ .menu ul li  {  border: 1px solid white;  background-color:#80ff80;  text-decoration:none;  padding:3px;  margin:3px;  }  .menu ul li a  {  color:#1a75ff;    }  
+ .menu ul li a hover  {  font-weight:bold;   }    
+ .footer  {  width:100%;  background:#333;  padding:10px 0;  color:#fff;   bottom:0;  } 
